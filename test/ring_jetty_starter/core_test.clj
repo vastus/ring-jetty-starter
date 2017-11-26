@@ -1,6 +1,6 @@
-(ns blogapi.core-test
+(ns ring-jetty-starter.core-test
   (:require [clojure.test :refer :all]
-            [blogapi.core :refer :all]))
+            [ring-jetty-starter.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

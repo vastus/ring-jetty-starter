@@ -1,4 +1,4 @@
-(ns blogapi.core
+(ns ring-jetty-starter.core
   (:gen-class)
   (:require [ring.adapter.jetty :refer [run-jetty]]))
 
@@ -12,7 +12,5 @@
     (run-jetty #'handler {:port 3000
                           :join? false})))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main [& args]
+  (run-jetty handler {:port 3000}))
